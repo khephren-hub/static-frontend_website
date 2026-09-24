@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magasin | Paiement</title>
+    <link rel="stylesheet" href="assets/authentification.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="https://logos-world.net/wp-content/uploads/2020/05/Patagonia-Logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#">Dernière collection</a></li>
+            <li><a href="#">Hommes</a></li>
+            <li><a href="#">Femmes</a></li>
+            <li><a href="#">Enfants</a></li>
+        </ul>
+        <div class="nav-right">
+            <ul class="nav-right-menu">
+                <form action="#">
+                    <input type="text" placeholder="Rechercher">
+                </form>
+                <li><a href="cart.html"><i class="bi bi-cart"></i></a></li>
+                <li><a href="./login.html"><i class="bi bi-person"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="panier">
+        <img class="background" src="https://www.quasarex.com/wp-content/themes/qex-child/inc/img/og/animals/Guanaco-Patagonia.jpg" alt="alpaga">
+        <div id="overlay"></div>
+        <div id="pay">
+            
+            <form action="adress.html" method="post">
+                <label for="lname">Nom :</label>
+                <input type="text" id="lname" name="nom" placeholder="Ex : Doe" required>
+                <label for="fname">Prénom :</label>
+                <input type="text" id="fname" name="prenom" placeholder="Ex : John" required>
+                <label for="birthday">Date de naissance :</label>
+                <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                value="2000-01-01"
+                max="2007-10-11" 
+                required/>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Ex : john.doe@gmail.com" required>
+                <input type="submit" id="submit" value="Valider">
+            </form>
+
+            <hr>       
+
+            <div id="login">
+                <a href="login.html"><button>Se connecter</button></a>
+            </div>
+
+            <div id="payment-methods">
+                <img src="assets/images/visa-alt.svg" alt="Visa">
+                <img src="assets/images/mastercard.svg" alt="Mastercard">
+                <img src="assets/images/american-express.png" alt="American Express">
+                <img src="assets/images/paypal.svg" alt="PayPal">
+                <img src="assets/images/cartes-bancaires.svg" alt="CB">
+                <img src="assets/images/apple-pay.svg" alt="Apple Pay">
+                <img src="assets/images/google-pay.svg" alt="Google Pay">
+                <img src="assets/images/maestro.svg" alt="Maestro">
+                <img src="assets/images/samsung-pay.svg" alt="Samsung Pay">
+            </div>
+            <p id="secure-payment"><img src="assets/images/secure-payment.png" alt="lock">Paiement sécurisé</p>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content-container">
+            <div class="footer-content-subcontainer">
+                <form class="footer-content-newsletter" action="#">
+                    <h1>Newsletter</h1>
+                    <p>Inscrivez-vous à la newsletter pour être informé des promotions, actualités et autres...</p>
+                    <input type="text" placeholder="Adresse Email" required>
+                    <p class="disclaimer">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsa voluptates animi praesentium tempore eos nostrum maiores quo, impedit harum.</p>
+                    <input type="submit" value="S'inscrire">
+                </form>
+            </div>
+            <div class="footer-content-subcontainer">
+                <h1>Obtenir de l'aide</h1>
+                <ul>
+                    <li><a href="#">Service client</a></li>
+                    <li><a href="#">Livraison</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Réparations</a></li>
+                    <li><a href="#">Guide des tailles</a></li>
+                    <li><a href="#">Connexion</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+            <div class="footer-content-subcontainer">
+                <div class="logo-container">
+                    <a href="./login.html">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/05/Patagonia-Logo.png" alt="Brand logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Arthur Franck Khémara. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
